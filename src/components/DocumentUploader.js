@@ -20,7 +20,7 @@ const DocumentUploader = () => {
     formData.append('file', file);
 
     try {
-      const response = await axios.post('http://localhost:8000/upload', formData, {
+      const response = await axios.post('https://server-referral-summarizer-6aaa29cf4520.herokuapp.com/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
