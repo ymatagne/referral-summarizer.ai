@@ -52,7 +52,7 @@ const DocumentUploader = () => {
       <h2 className="text-2xl font-bold mb-4">Upload Referral PDF</h2>
       <p className="text-gray-600 mb-6">Drag and drop your referral PDF or click to select a file.</p>
       <div className="border-2 border-dashed border-gray-400 rounded-lg p-8 flex justify-center items-center cursor-pointer">
-        <input type="file" accept=".pdf"  id="referral-pdf" onChange={handleFileUpload} />
+        <input type="file" id="referral-pdf" onChange={handleFileUpload} />
 
         <button onClick={handleSummarize}>Summarize</button>
       </div>
